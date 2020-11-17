@@ -13,7 +13,8 @@ int main()
     cin >> a;
     cout << "Iveskite antraji skaiciu: ";
     cin >> b;
-    if (a < b) {
+    if (a < b)
+    {
         cout << a << " yra mazesnis uz " << b << endl;
     }
     return 0;
