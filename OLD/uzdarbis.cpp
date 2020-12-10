@@ -15,16 +15,14 @@ using namespace std;
 
 int main()
 {
-    int n;
     float s = 0;
-    bool first = true;
-    string text;
+    bool pirmas = true;
     ifstream fd("data.txt");
     for (string line; getline(fd, line);)
     {
-        if (first)
+        if (pirmas)
         {
-            first = false;
+            pirmas = false;
             continue;
         }
         s += stoi(line);
