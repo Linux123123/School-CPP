@@ -20,8 +20,8 @@ int main()
     fd >> a >> b >> c >> d >> e;
     s = (a + b + c + d + e) / 5;
     ofstream fr("res.txt");
-    fr << "Vidurkis: " << s << endl;
-    cout << "Vidurkis: " << s << endl;
+    fr << "Vidurkis: " << setw(4) << fixed << setprecision(2) << s << endl;
+    cout << "Vidurkis: " << setw(4) << fixed << setprecision(2) << s << endl;
     fd.close();
     fr.close();
     return 0;

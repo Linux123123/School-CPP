@@ -15,22 +15,23 @@ using namespace std;
 
 int main()
 {
-    float s = 0;
+    double s = 0;
     bool pirmas = true;
     ifstream fd("data.txt");
     for (string line; getline(fd, line);)
+    // Kiek nori algu, bet jos turi buti kiekvienas naujoje eiluteje
     {
         if (pirmas)
         {
             pirmas = false;
             continue;
         }
-        s += stoi(line);
+        s += stod(line);
     }
 
     ofstream fr("res.txt");
-    fr << "Alga: " << s << endl;
-    cout << "Alga: " << s << endl;
+    fr << "Alga: " << setw(4) << fixed << setprecision(2) << s << endl;
+    cout << "Alga: " << setw(4) << fixed << setprecision(2) << s << endl;
     fd.close();
     fr.close();
 
