@@ -81,4 +81,4 @@ Functions:
 
 Realieji:
 
-    "......" << setw (8) << fixed << setprecision(2) << ..... << endl;
+    "text" << setw (8) << fixed << setprecision(2) << variable << endl;
