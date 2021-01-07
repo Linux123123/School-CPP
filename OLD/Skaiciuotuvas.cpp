@@ -107,7 +107,7 @@ int main()
     do
     {
         skaiciavimas();
-    } while (arTesti("Ar norite skaiciuoti dar karta? [Y/y]: "));
+    } while (arTesti("Ar norite skaiciuoti dar karta? [Y/n]: "));
 
     return 0;
 }
