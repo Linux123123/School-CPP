@@ -23,7 +23,7 @@ int main()
     cin >> sk;
     while (sk != 999)
     {
-        if ((abs(sk) > 0) && (abs(sk) < 10))
+        if ((abs(sk) >= 0) && (abs(sk) < 10))
             sum += sk;
         else
             cout << "Skaičius ne vienzenklis!" << endl;
