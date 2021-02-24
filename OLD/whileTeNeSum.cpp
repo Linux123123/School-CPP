@@ -3,7 +3,7 @@ Autorinės teisės (C) 2021, Linas Aleksandravičius, <linas.alexx@gmail.com>
 
 Sukurta: 23:26 10 02 2021
 
-whileLygNelySum
+whileTeNeSum
 */
 
 #include <iostream>
