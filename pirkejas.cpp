@@ -6,8 +6,8 @@ using namespace std;
 int daugPrekiu(vector<int> pirkejai)
 {
     int max = 0;
-    int eilNr;
-    for (int i = 0; i < pirkejai.size(); i++)
+    int eilNr = 0;
+    for (unsigned long i = 0; i < pirkejai.size(); i++)
     {
         if (pirkejai[i] > max)
         {
@@ -18,7 +18,8 @@ int daugPrekiu(vector<int> pirkejai)
     return eilNr;
 }
 
-int laikasKasoje(int prekiuSk, int vienaPrekeT, int atsiskaitymasT) {
+int laikasKasoje(int prekiuSk, int vienaPrekeT, int atsiskaitymasT)
+{
     int laikas = prekiuSk * vienaPrekeT + atsiskaitymasT;
     return laikas;
 }
