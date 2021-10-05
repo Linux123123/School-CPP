@@ -10,13 +10,11 @@ using namespace std;
 int dieniuSkaitys(int pus, int pusPerDiena, int pusDaug)
 {
     int dienos = 0;
-    while (true)
+    while (pus > 0)
     {
         dienos++;
         pus -= pusPerDiena;
         pusPerDiena += pusDaug;
-        if (pus <= 0)
-            break;
     }
     return dienos;
 }
