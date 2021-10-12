@@ -20,7 +20,6 @@ int Demuo(int sk)
     for (int i = 1; i < sk; i++)
     {
         dabar = kitasSkaicius(dabar, i);
-        cout << dabar << endl;
         suma += dabar;
     }
     return suma;
