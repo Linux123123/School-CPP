@@ -7,18 +7,21 @@ antras
 #include <bits/stdc++.h>
 using namespace std;
 
-int kitasSkaicius(int dabartinis)
+int kitasSkaicius(int dabartinis, int kelintas)
 {
-    string skStr = to_string(dabartinis) + to_string(dabartinis + 1);
-    return atoi(skStr);
+    string skStr = to_string(dabartinis) + to_string(kelintas + 1);
+    return atoi(skStr.c_str());
 }
 
 int Demuo(int sk)
 {
     int suma = 1;
-    for (int i = 2; i < sk; i++)
+    int dabar = 1;
+    for (int i = 1; i < sk; i++)
     {
-        suma += kitasSkaicius(i);
+        dabar = kitasSkaicius(dabar, i);
+        cout << dabar << endl;
+        suma += dabar;
     }
     return suma;
 }
