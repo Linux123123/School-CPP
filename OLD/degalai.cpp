@@ -7,6 +7,24 @@ degalai
 #include <bits/stdc++.h>
 using namespace std;
 
+void gerVid(double &ger, double &suma, int &gerNr, int sana[][2])
+{
+    ger = sana[0][0] * 100 / sana[0][1];
+    suma += ger;
+    gerNr = 1;
+
+    for (int i = 1; i < n; i++)
+    {
+        double perSimt = sana[i][0] * 100 / sana[i][1];
+        suma += perSimt;
+        if (perSimt < ger)
+        {
+            gerNr = i + 1;
+            ger = perSimt;
+        }
+    }
+}
+
 int main()
 {
     ifstream fr("DUOM.txt");
@@ -23,22 +41,10 @@ int main()
         fr >> sana[i][0] >> sana[i][1];
     }
 
-    ger = sana[0][0] * 100 / sana[0][1];
-    suma += ger;
-    gerNr = 1;
+    gerVid(ger, suma, gerNr, sana);
 
-    for (int i = 1; i < n; i++)
-    {
-        double perSimt = sana[i][0] * 100 / sana[i][1];
-        suma += perSimt;
-        if (perSimt < ger)
-        {
-            gerNr = i + 1;
-            ger = perSimt;
-        }
-    }
-
-    fo << gerNr << " " << setw(2) << fixed << setprecision(1) << ger << " l / 100 km" << endl;
+    fo
+        << gerNr << " " << setw(2) << fixed << setprecision(1) << ger << " l / 100 km" << endl;
     fo << setw(2) << fixed << setprecision(1) << suma / n << " l/100 km";
     fr.close();
     fo.close();
