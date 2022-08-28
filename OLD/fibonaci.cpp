@@ -1,5 +1,5 @@
 /*
-Autorinės teisės (C) 2022, Linas Aleksandravičius, <linas.alexx@gmail.com>
+Autorinės teisės (C) 2022, Linas Aleksandravičius, <me@linux123123.com>
 
 Sukurta: 12:53 09 05 2022
 
@@ -9,20 +9,19 @@ fibonaci
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    ifstream fr("U1.txt");
-    ofstream fo("U1rez.txt");
+int main() {
+  ifstream fr("U1.txt");
+  ofstream fo("U1rez.txt");
 
-    int n;
+  int n;
 
-    fr >> n;
+  fr >> n;
 
-    unsigned long long int ats = round(pow((1 + sqrt(5)) / 2, n) / sqrt(5));
+  unsigned long long int ats = round(pow((1 + sqrt(5)) / 2, n) / sqrt(5));
 
-    fo << ats << endl;
+  fo << ats << endl;
 
-    fr.close();
-    fo.close();
-    return 0;
+  fr.close();
+  fo.close();
+  return 0;
 }
