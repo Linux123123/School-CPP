@@ -1,6 +1,6 @@
-*
-!OLD
-!lmio-2021-mok
-!*.cpp
-!README.md
-!.gitignore
+.vscode
+*.o
+*.exe
+*.cbp
+*.depend
+*.layout

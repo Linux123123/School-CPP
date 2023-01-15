@@ -1,0 +1,8 @@
+MARY            248
+PATRICIA        146
+LINDA           223
+BARBARA         108
+ELIZABETH       139
+JENNIFER        165
+MARIA           147
+11 76
